@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/dark_background">
+
+    <TextView
+        android:id="@+id/navDeviceName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_wheelchair"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:gravity="center" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="12dp"
+        android:background="@color/gray_700" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:textColor="@color/gray_400"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Battery Status -->
+    <TextView
+        android:id="@+id/navBattery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_battery"
+        android:drawableTint="@color/green_500"
+        android:drawablePadding="12dp"
+        android:text="@string/battery_default"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Connection Status -->
+    <TextView
+        android:id="@+id/navConnection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_wifi"
+        android:drawableTint="@color/blue_400"
+        android:drawablePadding="12dp"
+        android:text="@string/connected_default"
+        android:textColor="@color/white"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Obstacle Status -->
+    <TextView
+        android:id="@+id/navObstacle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_alert"
+        android:drawableTint="@color/yellow_500"
+        android:drawablePadding="12dp"
+        android:text="@string/clear_default"
+        android:textColor="@color/white"
+        android:layout_marginBottom="16dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginVertical="12dp"
+        android:background="@color/gray_700" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/control_modes"
+        android:textColor="@color/gray_400"
+        android:textSize="12sp"
+        android:layout_marginBottom="8dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_control"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/navSwitchAppControl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="24dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/wheelchair_only"
+            android:textColor="@color/white" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/navSwitchWheelchairOnly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/navBackToDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/back_to_dashboard"
+        android:backgroundTint="@color/blue_600"
+        android:layout_marginBottom="8dp" />
+
+    <Button
+        android:id="@+id/navDisconnect"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="@string/disconnect"
+        android:backgroundTint="@color/red_700" />
+
+</LinearLayout>

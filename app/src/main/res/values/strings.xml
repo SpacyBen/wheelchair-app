@@ -1,25 +1,83 @@
 <resources>
-    <string name="app_name">wheelchairjava</string>
-    <string name="navigation_drawer_open">Open navigation drawer</string>
-    <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
-    <string name="nav_header_desc">Navigation header</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name">Wheelchair Guardian</string>
+    <string name="wheelchair_control">Wheelchair Control</string>
+    <string name="live">LIVE</string>
+    <string name="movement">MOVEMENT</string>
+    <string name="voice">VOICE</string>
+    <string name="speed">SPEED</string>
+    <string name="emergency_stop">EMERGENCY STOP</string>
+    <string name="smart_wheelchair_control">Smart Wheelchair Control</string>
+    <string name="choose_option">Choose an option to continue</string>
+    <string name="control_wheelchair">Control Wheelchair</string>
+    <string name="change_password">Change Password</string>
+    <string name="disconnect">Disconnect</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="status">STATUS</string>
+    <string name="battery">Battery</string>
+    <string name="connection">Connection</string>
+    <string name="obstacle">Obstacle</string>
+    <string name="control_modes">CONTROL MODES</string>
+    <string name="app_control">App Control</string>
+    <string name="wheelchair_only">Wheelchair Only</string>
+    <string name="back_to_dashboard">Back to Dashboard</string>
+    <string name="connected">Connected</string>
+    <string name="clear">Clear</string>
+    <string name="detected">Detected</string>
+    <string name="connecting_to">Connecting to: %s</string>
+    <string name="default_password_hint">Default Password: admin123</string>
+    <string name="change_password_hint">You can change this after logging in</string>
+    <string name="login">Login</string>
+    <string name="authenticating">Authenticating...</string>
+    <string name="current_password">Current Password</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Confirm New Password</string>
+    <string name="update_password">Update Password</string>
+    <string name="guardian_authentication">Guardian Authentication</string>
+    <string name="scan_bluetooth">Scan Bluetooth Devices</string>
+    <string name="scan_wifi">Scan WiFi Devices</string>
+    <string name="available_devices">Available Devices</string>
+    <string name="back_to_options">Back to Connection Options</string>
+    <string name="signal_strength">Signal: %d%%</string>
+    <string name="smart_wheelchair_1">Smart Wheelchair #1</string>
+    <string name="smart_wheelchair_2">Smart Wheelchair #2</string>
+    <string name="wheelchair_unit_a">Wheelchair Unit A</string>
+    <string name="forward_arrow">↑</string>
+    <string name="backward_arrow">↓</string>
+    <string name="left_arrow">←</string>
+    <string name="right_arrow">→</string>
+    <string name="password_hint">Password</string>
+    <string name="back">Back</string>
+    <string name="update_password_hint">Update your guardian authentication password</string>
+    <string name="menu">Menu</string>
+    <string name="video">Video Feed</string>
 
-    <string name="menu_transform">Transform</string>
-    <string name="menu_reflow">Reflow</string>
-    <string name="menu_slideshow">Slideshow</string>
-    <string name="menu_settings">Settings</string>
+    <!-- Missing strings for ControlActivity -->
+    <string name="battery_percent">Battery %d%%</string>
+    <string name="app_controls_disabled">App controls are disabled</string>
+    <string name="moving">Moving %s</string>
+    <string name="emergency_stop_activated">EMERGENCY STOP ACTIVATED!</string>
+    <string name="voice_control_disabled">Voice control is disabled</string>
+    <string name="listening_voice">Listening for voice commands...</string>
+    <string name="voice_stopped">Voice control stopped</string>
 
-    <string name="lorem_ipsum_title">Lorem Ipsum"</string>
-    <string name="lorem_ipsum">Lorem Ipsum is simply placeholder text of the printing and
-        typesetting industry. Lorem Ipsum has been the industry\'s standard placeholder text ever
-        since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
-        type specimen book"
-    </string>
-    <string name="fab_content_description">Represents a view to invoke an action</string>
-    <string name="image_view_item_transform_content_description">Represents an image view in the
-        item
-    </string>
+    <!-- Add these to your strings.xml -->
+    <string name="smart_wheelchair">Smart Wheelchair</string>
+    <string name="battery_default">85%</string>
+    <string name="connected_default">Connected</string>
+    <string name="clear_default">Clear</string>
+
+    <!-- Add these strings -->
+
+    <string name="battery_percent_format">%d%%</string>
+    <string name="speed_percent_format">%d%%</string>
+    <string name="connected_via">Connected via %s</string>
+    <string name="bluetooth">Bluetooth</string>
+
+    <string name="cannot_enable_app_control">Cannot enable App Control when Wheelchair Only mode is active</string>
+    <string name="wheelchair_only_mode_active">Wheelchair Only Mode: Use physical controls on wheelchair</string>
+    <string name="forward">Forward</string>
+    <string name="backward">Backward</string>
+    <string name="left">Left</string>
+    <string name="right">Right</string>
+
 </resources>

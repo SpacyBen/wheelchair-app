@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/smart_wheelchair_control"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choose_option"
+        android:textColor="@color/gray_400"
+        android:textSize="14sp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Control Wheelchair Button as TextView with compound drawable -->
+    <TextView
+        android:id="@+id/cardControl"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_card_gradient"
+        android:drawableStart="@drawable/ic_gamepad"
+        android:drawableTint="@color/white"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/control_wheelchair"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <!-- Change Password Button as TextView with compound drawable -->
+    <TextView
+        android:id="@+id/cardChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/bg_card_gradient_secondary"
+        android:drawableStart="@drawable/ic_lock"
+        android:drawableTint="@color/white"
+        android:drawablePadding="12dp"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/change_password"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:foreground="?android:attr/selectableItemBackground"/>
+
+    <Button
+        android:id="@+id/btnDisconnect"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="@string/disconnect"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:background="@drawable/btn_danger"
+        android:textColor="@color/white"
+        android:layout_marginTop="12dp"/>
+
+</LinearLayout>
